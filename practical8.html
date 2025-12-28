@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Demo</title>
+    <style>
+        /* Universal selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* ID selector */
+        #main-title {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* Descendant selector */
+        div p {
+            color: green;
+        }
+
+        /* Group selector */
+        h2, h3, p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ID selector -->
+    <h1 id="main-title">CSS Selectors Demonstration</h1>
+
+    <!-- Class selector -->
+    <p class="highlight">This paragraph uses a <b>class selector</b>.</p>
+
+    <!-- Descendant selector -->
+    <div>
+        <h2>Inside a DIV</h2>
+        <p>This paragraph is styled using a <b>descendant selector</b> (div p).</p>
+    </div>
+
+    <!-- Group selector -->
+    <h2>Grouped Heading</h2>
+    <h3>Another Grouped Heading</h3>
+    <p>This text shares margin styling with headings via a <b>group selector</b>.</p>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.gematsu.com/wp-content/uploads/2022/01/Game-Page-Featured_Ghost-of-Tsushima-scaled.jpg'); /* Background image */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto; /* Margin around the box */
+            padding: 20px;     /* Padding inside the box */
+            border: 5px solid #333; /* Border around the box */
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 3px dashed #555; /* Border under heading */
+            padding-bottom: 10px;
+        }
+
+        .box {
+            background-color: #f0f8ff;
+            border: 2px solid #0077cc;
+            margin: 15px;   /* Space outside the box */
+            padding: 15px;  /* Space inside the box */
+        }
+
+        .box p {
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced CSS Styling Example</h1>
+
+        <div class="box">
+            <h2>Box Model</h2>
+            <p>This box demonstrates <b>margin</b>, <b>border</b>, and <b>padding</b> clearly.</p>
+        </div>
+
+        <div class="box">
+            <h2>Background Image</h2>
+            <p>The page uses a background image with <b>cover</b> and <b>fixed</b> properties.</p>
+        </div>
+
+        <div class="box">
+            <h2>Borders</h2>
+            <p>Different border styles (solid, dashed) are applied to elements.</p>
+        </div>
+    </div>
+</body>
+</html>
