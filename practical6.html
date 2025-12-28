@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Styles Demo</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: navajowhite;
+        }
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+        .highlight {
+            color: white;
+            background-color: black;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: green; text-decoration: underline;">
+        Welcome to My CSS Demo Page
+    </h1>
+
+    <p>This paragraph is styled using <b>internal CSS</b>.</p>
+
+    <p class="highlight">This text uses a CSS class defined internally.</p>
+
+    <p style="color: red; font-size: 18px;">
+        This paragraph is styled using <b>inline CSS</b>.
+    </p>
+
+    <p class="external-style">
+        This paragraph will be styled using <b>external CSS</b> (from styles.css file).
+    </p>
+</body>
+</html>
