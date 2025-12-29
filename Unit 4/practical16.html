@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide without CSS</title>
+</head>
+<body>
+
+<button onclick="toggleText()">Show / Hide</button>
+
+<p id="text">This text will be shown or hidden</p>
+
+<script>
+function toggleText() {
+    var element = document.getElementById("text");
+
+    if (element.style.display === "none") {
+        element.style.display = "block"; // show
+    } else {
+        element.style.display = "none";  // hide
+    }
+}
+</script>
+
+</body>
+</html>
