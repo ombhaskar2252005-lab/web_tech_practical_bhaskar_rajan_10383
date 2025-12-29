@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>DOM Manipulation</title>
+</head>
 <body>
 
-<button onclick="add()">Add</button>
-<button onclick="change()">Change</button>
-<button onclick="remove()">Remove</button>
+<h2>JavaScript DOM Manipulation Example</h2>
 
-<ul id="list"></ul>
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Last Item</button>
+<button onclick="changeItem()">Modify First Item</button>
+
+<ul id="list">
+    <li>Item 1</li>
+</ul>
 
 <script>
-function add() {
-    var li = document.createElement("li");
-    li.innerHTML = "Item";
-    document.getElementById("list").appendChild(li);
-}
+    // Create and append a new element
+    function addItem() {
+        const li = document.createElement("li");   // create element
+        li.innerHTML = "New Item";
+        document.getElementById("list").appendChild(li); // append child
+    }
 
-function change() {
-    var list = document.getElementById("list");
-    if (list.firstChild)
-        list.firstChild.innerHTML = "Updated Item";
-}
+    // Remove last child element
+    function removeItem() {
+        const list = document.getElementById("list");
+        if (list.lastElementChild) {
+            list.removeChild(list.lastElementChild); // remove child
+        }
+    }
 
-function remove() {
-    var list = document.getElementById("list");
-    if (list.firstChild)
-        list.removeChild(list.firstChild);
-}
+    // Modify existing child element
+    function changeItem() {
+        const list = document.getElementById("list");
+        if (list.firstElementChild) {
+            list.firstElementChild.innerHTML = "Modified Item";
+        }
+    }
 </script>
 
 </body>
